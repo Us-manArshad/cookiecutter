@@ -68,4 +68,4 @@ class StrictEnvironment(ExtensionLoaderMixin, Environment):
 
         Also loading extensions defined in cookiecutter.json's _extensions key.
         """
-        super().__init__(undefined=StrictUndefined, variable_start_string='{{{', variable_end_string='}}}'**kwargs)
+        super().__init__(undefined=StrictUndefined, variable_start_string='{{{', variable_end_string='}}}', **kwargs)
